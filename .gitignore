@@ -1,0 +1,15 @@
+# 开发工具/IDE
+.codex/
+.workbuddy/
+.DS_Store
+Thumbs.db
+
+# 临时脚本与打包产物
+小红书小工具.zip
+shot.bat
+*.tmp
+
+# 构建产物（如果以后引入构建步骤）
+node_modules/
+dist/
+build/

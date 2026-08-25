@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>键政派系测试</title>
+  <link rel="icon" type="image/png" href="./assets/icon.png" />
+  <link rel="apple-touch-icon" href="./assets/icon.png" />
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <header class="topbar">
+      <div class="brand-mark"><span class="mark-dot"></span><span>观点档案室</span></div>
+      <span class="edition">VOL. 01 / 2026</span>
+    </header>
+
+    <section id="intro-view" class="view intro-view">
+      <div class="intro-kicker">中文互联网观察 · 非严肃测量</div>
+      <h1>你属于哪个<br><em>键政派系？</em></h1>
+      <p class="intro-lede">十二道选择题，拼出一张属于你的观点坐标。这里没有标准答案，只有你更常站在哪个角度看问题。</p>
+      <div class="intro-note"><span class="note-index">01</span><span>测评约需 3 分钟<br>结果仅作娱乐参考</span></div>
+      <button id="start-btn" class="primary-btn" type="button"><span>开始测评</span><span class="arrow">→</span></button>
+      <div class="intro-stamp">LOCAL / NO DATA UPLOAD</div>
+    </section>
+
+    <section id="quiz-view" class="view quiz-view" hidden>
+      <div class="quiz-meta"><span id="question-index">01 / 12</span><span class="quiz-label">观点采样</span></div>
+      <div class="progress-track"><span id="progress-bar"></span></div>
+      <div class="question-wrap">
+        <p id="question-kicker" class="question-kicker">SCENE 01</p>
+        <h2 id="question-title"></h2>
+        <p id="question-context" class="question-context"></p>
+        <div id="options" class="options" role="radiogroup" aria-label="选择一个答案"></div>
+      </div>
+      <div class="quiz-footer"><button id="back-btn" class="text-btn" type="button"><span class="arrow">←</span> 返回上一题</button><span class="hint">选择最接近你直觉的答案</span></div>
+    </section>
+
+    <section id="result-view" class="view result-view" hidden>
+      <div class="result-top"><span class="result-kicker">YOUR FILE · 终局档案</span><span class="result-count">12 / 12</span></div>
+      <header class="result-hero">
+        <div class="result-copy">
+          <p class="result-eyebrow">你的互联网键政派系是</p>
+          <h2 id="result-name" class="result-name"></h2>
+          <p id="result-tagline" class="result-tagline"></p>
+          <div class="representative"><span class="rep-label">代表性 IP</span><strong id="result-representative"></strong></div>
+        </div>
+        <div class="result-art">
+          <div id="result-portrait" class="result-portrait" aria-hidden="true"></div>
+          <span id="result-code" class="result-code"></span>
+        </div>
+      </header>
+      <blockquote class="quote-card"><span class="quote-mark">“</span><p id="result-quote"></p></blockquote>
+      <div class="result-grid">
+        <div class="panel"><div class="panel-label">坐标切片</div><div id="axis-list" class="axis-list"></div></div>
+        <div class="panel traits-panel"><div class="panel-label">关键词</div><div id="trait-list" class="trait-list"></div></div>
+      </div>
+      <div class="explain-block"><div class="panel-label">为什么是这个派系</div><p id="result-explain"></p></div>
+      <div class="result-actions">
+        <button id="share-btn" class="primary-btn" type="button"><span>生成分享海报</span><span class="arrow">↧</span></button>
+        <button id="restart-btn" class="text-btn restart" type="button"><span>再测一次</span><span class="arrow">↻</span></button>
+        <p class="legal">本测评只记录在本地，不上传任何答案。</p>
+      </div>
+    </section>
+  </main>
+
+  <div id="poster-overlay" class="poster-overlay" hidden>
+    <canvas id="poster-canvas"></canvas>
+    <div class="poster-actions">
+      <button id="poster-save" class="save" type="button">保存图片</button>
+      <button id="poster-close" class="close" type="button">关闭</button>
+    </div>
+  </div>
+
+  <script src="./assets/main.js"></script>
+</body>
+</html>

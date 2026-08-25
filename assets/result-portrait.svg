@@ -1,0 +1,10 @@
+<svg viewBox="0 0 240 280" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="派系视觉徽章">
+  <rect width="240" height="280" rx="20" fill="#FAF9F5"/>
+  <circle cx="120" cy="118" r="80" fill="#B0451F" fill-opacity="0.12"/>
+  <circle cx="120" cy="118" r="80" stroke="#B0451F" stroke-width="2"/>
+  <path d="M120 38 A80 80 0 0 1 200 118 L120 118 Z" fill="#B0451F" fill-opacity="0.20"/>
+  <circle cx="95" cy="110" r="7" fill="#16140F"/>
+  <circle cx="145" cy="110" r="7" fill="#16140F"/>
+  <path d="M97 148 Q120 167 143 148" stroke="#B0451F" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <line x1="60" y1="118" x2="180" y2="118" stroke="#16140F" stroke-opacity="0.12" stroke-width="1"/>
+</svg>
